@@ -1,0 +1,229 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    background: none;
+    color: inherit;
+}
+
+img {
+    height: auto;
+    display: block;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-ExtraLight.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-Light.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-Regular.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-Medium.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-SemiBold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-Bold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-ExtraBold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 800;
+    text-rendering: optimizeLegibility;
+}
+
+/* common */
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    font-family: 'Manrope', sans-serif;
+    color: var(--white);
+    background-color: var(--black-100);
+    overflow-x: hidden;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: unset;
+}
+
+.section {
+    padding-left: 20px;
+    padding-right: 20px;
+    scroll-margin-top: 60px;
+}
+
+.btn {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 15px 25.1px;
+
+    width: fit-content;
+
+    border-radius: 40px;
+
+    font-size: clamp(0.75rem, 0.707rem + 0.19vw, 0.938rem);
+    line-height: 1.4;
+    text-transform: uppercase;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    padding-bottom: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 0;
+    height: 0;
+}
+
+section 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+}
+
+section a {
+    text-decoration: none;
+}
+
+/* variables */
+
+:root {
+    --max-width: 1200px;
+
+    --black: #000000;
+    --white: #FFFFFF;
+
+    --primary-500: #76564B;
+    --primary-light: #E9DFC8;
+    --hover: #573e34;
+
+    --black-100: #343434;
+
+    --grey-100: #8D8D8D;
+    --grey-200: #646363;
+
+    /* border radius */
+    --br--10: 10px;
+    --br--12: 12px;
+    --br--15: 15px;
+    --br--16: 16px;
+    --br--20: 20px;
+    --br--25: 25px;
+}

@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+
+    &-wrapper {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: var(--max-width);
+
+        padding: 0 16px;
+    }
+
+    &-wrapper__actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .logo-company {
+            width: 48px;
+            height: 48px;
+
+            img {
+                display: flex;
+                width: 100%;
+            }
+        }
+    }
+
+    &-wrapper__list {
+        display: none;
+    }
+
+    &-wrapper__burger {
+        position: relative;
+
+        width: 18px;
+        height: 14px;
+
+        &::before,
+        &::after {
+            position: absolute;
+
+            content: '';
+
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            background-color: var(--white);
+            border-radius: 2px;
+        }
+
+        span {
+            position: absolute;
+
+            top: 48%;
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            background-color: var(--white);
+            border-radius: 2px;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    &-wrapper__logo {
+        display: block;
+
+        width: 113px;
+        height: 80px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        &-wrapper__actions {
+            gap: 24px;
+            
+            .logo-company {
+                width: 52px;
+                height: 52px;
+            }
+        }
+        
+        &-wrapper__logo {
+            width: 233px;
+            height: 119px;
+        }
+
+        &-wrapper__list {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            li a {
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+            }
+
+            li a.active,
+            li a:hover {
+                font-weight: 800;
+            }
+        }
+
+        &-wrapper__burger {
+            display: none;
+        }
+    }
+}

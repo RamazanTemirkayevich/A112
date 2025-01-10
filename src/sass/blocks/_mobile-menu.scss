@@ -1,0 +1,38 @@
+.mobile-menu {
+    position: fixed;
+
+    top: 80px;
+    left: -150%;
+
+    width: 245px;
+    height: 100%;
+
+    padding: 60px 16px;
+
+    background-color: var(--black-100);
+    transition: .3s all ease-in-out;
+
+    &.active {
+        left: 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        li a {
+            font-size: 14px;
+            letter-spacing: 0.1em;
+
+            padding: 8px 15px;
+            text-transform: uppercase;
+            transition: .3s;
+        }
+
+        li a.active,
+        li a:hover {
+            border: 0.50px solid var(--primary-light);
+        }
+    }
+}
