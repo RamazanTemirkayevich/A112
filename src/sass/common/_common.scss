@@ -142,7 +142,7 @@ img {
 
 /* common */
 body {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 1.18;
     font-family: 'Manrope', sans-serif;
@@ -166,9 +166,13 @@ html {
     padding: unset;
 }
 
+.container-right {
+    padding-left: calc((100% - var(--max-width)) / 2);
+}
+
 .section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
     scroll-margin-top: 60px;
 }
 
@@ -217,15 +221,6 @@ html {
     background: transparent;
     width: 0;
     height: 0;
-}
-
-section 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-weight: 400;
 }
 
 section a {

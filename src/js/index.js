@@ -36,6 +36,9 @@ window.addEventListener("DOMContentLoaded", () => {
     // hero carousel
 
     new Swiper(".hero", {
+        autoplay: {
+            delay: 3000,
+        },
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,

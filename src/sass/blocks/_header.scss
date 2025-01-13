@@ -116,6 +116,8 @@
 
 @media (min-width: 1024px) {
     .header {
+        background-color: var(--black-100);
+        
         &-wrapper__actions {
             gap: 24px;
 

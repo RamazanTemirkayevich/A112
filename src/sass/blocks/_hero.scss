@@ -39,7 +39,7 @@
     &-wrapper__slider-info {
         position: relative;
         z-index: 2;
-        padding: 0 20px;
+        padding: 0 16px;
 
         strong {
             font-weight: 300;
@@ -105,8 +105,10 @@
 
 @media (min-width: 1360px) {
     .hero {
+        padding-top: 119px;
+
         &-wrapper__slider {
-            height: 772px;
+            height: 610px;
         }
 
         &-wrapper__slider-info {
@@ -118,6 +120,14 @@
         &-pagination {
             padding-left: calc((100% - var(--max-width)) / 2);
             left: 0 !important;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .hero {
+        &-wrapper__slider {
+            height: 772px;
         }
     }
 }
