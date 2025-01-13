@@ -5,38 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A112</title>
-    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./src/css/index.min.css">
 </head>
 <body>
-    <main>
-        <header class="header">
-            <div class="header-wrapper">
-                <div class="header-wrapper__actions">
-                    <div class="header-wrapper__burger">
-                        <span></span>
-                    </div>
-                    <div class="logo-company">
-                        <img src="./src/assets/icons/logo-a112.svg" alt="">
-                    </div>
-                    <ul class="header-wrapper__list">
-                        <li><a href="#">Акции</a></li>
-                        <li><a href="#">Квартиры</a></li>
-                        <li><a href="#">О комплексе</a></li>
-                        <li><a href="#">Ипотека</a></li>
-                        <li><a href="#">Расположение</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-wrapper__actions">
+                <div class="header-wrapper__burger">
+                    <span></span>
                 </div>
-                <div class="header-wrapper__logo">
-                    <img src="./src/assets/icons/logo.svg" alt="">
-                </div>
-            </div>
-        </header>
-
-        <div class="mobile-menu">
-            <nav class="mobile-menu__nav">
-                <ul class="mobile-menu__list">
+                <a href="#" class="logo-company">
+                    <img src="./src/assets/icons/logo-a112.svg" alt="">
+                </a>
+                <ul class="header-wrapper__list">
                     <li><a href="#">Акции</a></li>
                     <li><a href="#">Квартиры</a></li>
                     <li><a href="#">О комплексе</a></li>
@@ -44,8 +26,66 @@
                     <li><a href="#">Расположение</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-            </nav>
+            </div>
+            <a href="#" class="header-wrapper__logo">
+                <img src="./src/assets/icons/logo.svg" alt="">
+            </a>
         </div>
+    </header>
+
+    <div class="mobile-menu">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="#">Акции</a></li>
+                <li class="mobile-menu__item"><a href="#">Квартиры</a></li>
+                <li class="mobile-menu__item"><a href="#">О комплексе</a></li>
+                <li class="mobile-menu__item"><a href="#">Ипотека</a></li>
+                <li class="mobile-menu__item"><a href="#">Расположение</a></li>
+                <li class="mobile-menu__item"><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!--  -->
+        <section>
+            <div class="hero swiper">
+                <div class="hero-wrapper swiper-wrapper">
+                    <div class="hero-wrapper__slider swiper-slide">
+                        <div class="hero-wrapper__slider-img">
+                            <img src="./src/assets/img/hero-bg1.png" alt="">
+                        </div>
+                        <div class="hero-wrapper__slider-info">
+                            <strong>Все выгодные предложения от br застройщика с3 “а112”</strong>
+                            <a href="#" class="btn btn--light">Оставить заявку</a>
+                        </div>
+                    </div>
+                    <div class="hero-wrapper__slider swiper-slide">
+                        <div class="hero-wrapper__slider-img">
+                            <img src="./src/assets/img/hero-bg2.png" alt="">
+                        </div>
+                        <div class="hero-wrapper__slider-info">
+                            <strong>Акция на квартиры: Скидки  от застройщика - 0,7%</strong>
+                            <a href="#" class="btn btn--light">Оставить заявку</a>
+                        </div>
+                    </div>
+                    <div class="hero-wrapper__slider swiper-slide">
+                        <div class="hero-wrapper__slider-img">
+                            <img src="./src/assets/img/hero-bg3.png" alt="">
+                        </div>
+                        <div class="hero-wrapper__slider-info">
+                            <strong>квартиры в новостройке в жилом комплексе “золотой час” в г.Якутске</strong>
+                            <a href="#" class="btn btn--light">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-pagination"></div>
+            </div>
+        </section>
+        <!--  -->
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/js/index.js"></script>
 </body>
 </html>

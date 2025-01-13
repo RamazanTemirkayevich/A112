@@ -2,6 +2,13 @@
     display: flex;
     position: fixed;
     width: 100vw;
+    z-index: 12;
+    transition: .3s;
+
+    &.active,
+    &.scrolled {
+        background-color: var(--black-100);
+    }
 
     &-wrapper {
         margin: auto;
@@ -53,6 +60,7 @@
 
             background-color: var(--white);
             border-radius: 2px;
+            transition: .3s all ease-in;
         }
 
         span {
@@ -66,6 +74,7 @@
 
             background-color: var(--white);
             border-radius: 2px;
+            transition: .3s all ease-in;
         }
 
         &::before {
@@ -74,6 +83,20 @@
 
         &::after {
             bottom: 0;
+        }
+    }
+
+    &-wrapper__burger.active {
+        &::before {
+            top: 48%;
+            transform: rotate(45deg);
+        }
+        &::after {
+            top: 48%;
+            transform: rotate(133deg);
+        }
+        span {
+            scale: 0;
         }
     }
 
@@ -95,7 +118,7 @@
     .header {
         &-wrapper__actions {
             gap: 24px;
-            
+
             .logo-company {
                 width: 52px;
                 height: 52px;

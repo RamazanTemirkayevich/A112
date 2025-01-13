@@ -1,2 +1,6 @@
-@import 'blocks/header';
-@import 'blocks/mobile-menu'
+@import './common/common';
+@import './lib/index.sass';
+
+@import './blocks/header';
+@import './blocks/mobile-menu';
+@import './blocks/hero'

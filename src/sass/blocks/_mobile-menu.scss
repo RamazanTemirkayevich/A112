@@ -4,13 +4,15 @@
     top: 80px;
     left: -150%;
 
-    width: 245px;
+    width: 100%;
+    max-width: 213px;
     height: 100%;
 
     padding: 60px 16px;
 
     background-color: var(--black-100);
     transition: .3s all ease-in-out;
+    z-index: 12;
 
     &.active {
         left: 0;
@@ -21,17 +23,21 @@
         flex-direction: column;
         gap: 16px;
 
+        li {
+            width: fit-content;
+            padding: 9px 16px;
+        }
+
         li a {
             font-size: 14px;
             letter-spacing: 0.1em;
 
-            padding: 8px 15px;
             text-transform: uppercase;
             transition: .3s;
         }
 
-        li a.active,
-        li a:hover {
+        li.active,
+        li:hover {
             border: 0.50px solid var(--primary-light);
         }
     }
